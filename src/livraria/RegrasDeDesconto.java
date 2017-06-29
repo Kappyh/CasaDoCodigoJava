@@ -9,7 +9,7 @@ public class RegrasDeDesconto {
 
 		autor.setNome("Rodrigo Turini");
 
-		Livro livro = new Livro(autor);
+		Livro livro = new LivroFisico(autor);
 
 		livro.setValor(59.90);
 

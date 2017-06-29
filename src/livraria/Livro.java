@@ -1,6 +1,6 @@
 package livraria;
 
-public class Livro {
+public abstract class Livro {
 
 	private String nome;
 	private String descricao;
@@ -8,9 +8,9 @@ public class Livro {
 	private String isbn;
 	// Composição
 	private Autor autor;
-	
+
 	// Construtor
-	public Livro(Autor autor){
+	public Livro(Autor autor) {
 		this.autor = autor;
 		this.isbn = "000-00-0000-00-0";
 	}
@@ -78,14 +78,6 @@ public class Livro {
 		return this.autor != null;
 	}
 
-	public boolean aplicaDescontoDe(double porcentagem) {
-		if (porcentagem > 0.3) {
-			System.out.println("Desconto não pode ser aplicado"
-					+ "por ser maior que 30%");
-		}
-		this.valor -= this.valor * porcentagem;
-		return true;
-
-	}
+	public abstract boolean aplicaDescontoDe(double porcentagem);
 
 }
