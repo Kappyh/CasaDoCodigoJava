@@ -95,13 +95,13 @@ public abstract class Livro implements Produto {
                 +"\nISBN: "+ isbn;   
     }
     
-    @Override
-    public boolean equals(Object obj){
-        if(!(obj instanceOf Autor)) return false;
-    
-        Autor outro = (Autor) obj;
-        return this.nome.equals(outro.nome);
-    }
+//    @Override
+//    public boolean equals(Object obj){
+//        if(!(obj instanceOf Autor)) return false;
+//    
+//        Autor outro = (Autor) obj;
+//        return this.nome.equals(outro.nome);
+//    }
 
     public abstract boolean aplicaDescontoDe(double porcentagem);
 
